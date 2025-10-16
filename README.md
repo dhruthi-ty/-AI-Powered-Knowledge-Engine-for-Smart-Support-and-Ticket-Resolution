@@ -10,7 +10,7 @@
 ## 🚀 1. Project Overview
 
 **Project Name:** Smart Support & Ticket Resolution System
-**Description:**
+
 A **Python Streamlit** web application that streamlines support ticket management with **AI-driven insights**.
 The system automatically categorizes tickets, assigns agents, tracks resolution times, and provides real-time analytics dashboards.
 It leverages **Groq + FAISS embeddings** for intelligent ticket resolution and knowledge retrieval.
