@@ -233,4 +233,3 @@ This project is licensed under the terms of the [MIT License](./LICENSE).
 
 ---
 
-Would you like me to include **badges and visuals** (e.g., build status, Python version, or architecture diagram image placeholders) to make the README more GitHub-ready?
