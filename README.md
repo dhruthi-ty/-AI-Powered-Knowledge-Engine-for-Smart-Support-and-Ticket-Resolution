@@ -1,4 +1,4 @@
- 1. Project Overview
+1. Project Overview
 
 Project Name: Smart Support & Ticket Resolution System
 Description:
