@@ -173,15 +173,6 @@ project/
 
 ---
 
-## 👥 Agents
-
-* Sales
-* Marketing
-* Engineering
-* General Support
-
----
-
 ## ⚙️ Ticket Classification
 
 * **Priority:** Low / Medium / High / Critical
