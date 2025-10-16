@@ -1,0 +1,9 @@
+langchain
+langchain-community
+langchain-google-genai
+faiss-cpu
+google-generativeai
+python-dotenv
+gspread
+oauth2client
+pandas

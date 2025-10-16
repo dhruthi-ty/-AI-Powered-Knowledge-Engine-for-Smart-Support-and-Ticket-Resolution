@@ -1,0 +1,59 @@
+1. Account & Authentication Support
+
+Assistance with login, password reset, and account recovery.
+
+Account suspension appeals are reviewed within 48 hours.
+
+Two-factor authentication setup guidance is available in the help center.
+
+2. Billing & Payments
+
+Payment failures are typically resolved within 24 hours.
+
+Refund requests are processed within 7 business days.
+
+Invoices and receipts can be accessed through the customer portal.
+
+3. Technical Issues & Bug Reporting
+
+Known issues and bugs are documented in the knowledge base.
+
+Critical bugs (system crash, data loss) are prioritized and resolved within 1–2 business days.
+
+Non-critical bugs are scheduled for resolution in upcoming releases.
+
+4. Feature Requests
+
+Customers may suggest new features via the support portal.
+
+Requests are reviewed monthly and prioritized based on impact.
+
+Not all requests can be implemented, but feedback is logged and considered.
+
+5. Maintenance & Service Availability
+
+Regular system maintenance is announced 24 hours in advance.
+
+Emergency maintenance may occur for urgent security fixes.
+
+Target uptime: 99.9% annually.
+
+6. Ticket Handling & Escalation
+
+Priority 1 (Critical): Response within 1 hour.
+
+Priority 2 (High): Response within 4 hours.
+
+Priority 3 (Medium): Response within 24 hours.
+
+Priority 4 (Low): Response within 3 business days.
+
+Escalation available if unresolved after 48 hours.
+
+7. Customer Responsibilities
+
+Provide clear descriptions of the issue (steps to reproduce, screenshots if possible).
+
+Keep account information up-to-date.
+
+Respect community and usage guidelines outlined in terms of service.
