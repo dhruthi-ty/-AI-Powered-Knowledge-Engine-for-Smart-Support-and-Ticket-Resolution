@@ -1,126 +1,123 @@
-1. Project Overview
+Here’s a **clean, professional, and structured README.md** file for your project — formatted for GitHub or any documentation site. It blends your Agile documentation content with the folder layout from the image.
 
-Project Name: Smart Support & Ticket Resolution System
-Description:
-A Python Streamlit web application that streamlines support ticket management with AI-driven insights.
+---
+
+# 🧠 Smart Support & Ticket Resolution System
+
+### Intelligent AI-Powered Customer Support Automation
+
+---
+
+## 🚀 1. Project Overview
+
+**Project Name:** Smart Support & Ticket Resolution System
+**Description:**
+A **Python Streamlit** web application that streamlines support ticket management with **AI-driven insights**.
 The system automatically categorizes tickets, assigns agents, tracks resolution times, and provides real-time analytics dashboards.
-It leverages Groq + FAISS embeddings for intelligent ticket resolution and knowledge retrieval.
+It leverages **Groq + FAISS embeddings** for intelligent ticket resolution and knowledge retrieval.
 
-🔑 Key Capabilities
+### 🔑 Key Capabilities
 
-Submit and track customer support tickets.
+* Submit and track customer support tickets.
+* **AI-generated ticket resolutions** using RAG + LLM.
+* Automatic categorization (category, priority, status).
+* Dynamic agent assignment: *Sales, Marketing, Engineering, General Support.*
+* Save and sync data with **Google Sheets**.
+* Interactive analytics dashboard for ticket metrics and agent performance.
 
-AI-generated ticket resolutions using RAG + LLM.
+---
 
-Automatic categorization (category, priority, status).
+## 📋 2. Epics & Features
 
-Dynamic agent assignment: Sales, Marketing, Engineering, General Support.
+### **Epic 1: Ticket Submission**
 
-Save and sync data with Google Sheets.
+**Features:**
 
-Interactive analytics dashboard for ticket metrics and agent performance.
+* Capture customer, product, and issue details.
+* Retrieve relevant context from FAISS vector store.
+* Generate automated LLM-based resolution.
+* Categorize and assign agent dynamically.
+* Store ticket data in Google Sheets.
 
-📋 2. Epics & Features
-Epic 1: Ticket Submission
+**Acceptance Criteria:**
 
-Features:
+* Ticket validation and storage successful.
+* LLM-generated response is attached.
+* Agent assignment aligns with ticket content.
 
-Capture customer, product, and issue details.
+---
 
-Retrieve relevant context from FAISS vector store.
+### **Epic 2: Ticket Closure**
 
-Generate automated LLM-based resolution.
+**Features:**
 
-Categorize and assign agent dynamically.
+* Capture customer satisfaction rating (1–5).
+* Auto-calculate resolution time.
+* Update status to *Closed* and sync to Google Sheets.
 
-Store ticket data in Google Sheets.
+**Acceptance Criteria:**
 
-Acceptance Criteria:
+* Rating and closure timestamps recorded correctly.
+* Closed tickets visible in analytics view.
 
-Ticket validation and storage successful.
+---
 
-LLM-generated response is attached.
+### **Epic 3: Dashboard & Analytics**
 
-Agent assignment aligns with ticket content.
+**Features:**
 
-Epic 2: Ticket Closure
+* Metrics by ticket **Status**, **Priority**, **Channel**, and **Agent**.
+* Visualizations via **Plotly**.
 
-Features:
+**Acceptance Criteria:**
 
-Capture customer satisfaction rating (1–5).
+* Charts display real-time metrics.
+* Agent performance reflects accurate ticket counts.
 
-Auto-calculate resolution time.
+---
 
-Update status to Closed and sync to Google Sheets.
+## 🛠️ 3. Tasks / Implementation Steps
 
-Acceptance Criteria:
+### **Frontend (Streamlit)**
 
-Rating and closure timestamps recorded correctly.
+* Ticket form with validation.
+* AI-generated suggestions & auto-tagging.
+* Ticket closure interface with satisfaction rating.
+* Plotly-based visual dashboard.
 
-Closed tickets visible in analytics view.
+### **Backend (Python + Google Sheets API)**
 
-Epic 3: Dashboard & Analytics
+* Authentication & integration with Sheets API.
+* CRUD operations for tickets.
+* RAG (Retrieval-Augmented Generation) with FAISS.
+* Agent assignment using Groq LLM.
 
-Features:
+### **Analytics (Plotly)**
 
-Metrics by ticket Status, Priority, Channel, and Agent.
+* 📊 Ticket Status: *Open vs Closed*
+* 📈 Ticket Priority: *Low, Medium, High, Critical*
+* 🧩 Channels: *Web, Email, Phone*
+* 👥 Agent Performance: *Sales, Marketing, Engineering, Support*
 
-Visualizations via Plotly.
+### **Testing / QA**
 
-Acceptance Criteria:
+* Validate ticket workflow and AI responses.
+* Verify Google Sheets synchronization.
+* Cross-check dashboard metrics with stored data.
 
-Charts display real-time metrics.
+---
 
-Agent performance reflects accurate ticket counts.
+## 🧩 4. Architecture
 
-🛠️ 3. Tasks / Implementation Steps
-Frontend (Streamlit)
+**Frontend:** Streamlit
+**Backend:** Python + Google Sheets API
+**AI & RAG:** Groq LLM + FAISS embeddings
+**Storage:** Google Sheets (`TicketDatabase`, Sheet2)
+**Analytics:** Plotly (integrated in Streamlit UI)
 
-Ticket form with validation.
+### **Data Flow Diagram (Conceptual)**
 
-AI-generated suggestions & auto-tagging.
-
-Ticket closure interface with satisfaction rating.
-
-Plotly-based visual dashboard.
-
-Backend (Python + Google Sheets API)
-
-Authentication & integration with Sheets API.
-
-CRUD operations for tickets.
-
-RAG (Retrieval-Augmented Generation) with FAISS.
-
-Agent assignment using Groq LLM.
-
-Analytics (Plotly)
-
-📊 Ticket Status: Open vs Closed
-
-📈 Ticket Priority: Low, Medium, High, Critical
-
-🧩 Channels: Web, Email, Phone
-
-👥 Agent Performance: Sales, Marketing, Engineering, Support
-
-Testing / QA
-
-Validate ticket workflow and AI responses.
-
-Verify Google Sheets synchronization.
-
-Cross-check dashboard metrics with stored data.
-
-🧩 4. Architecture
-
-Frontend: Streamlit
-Backend: Python + Google Sheets API
-AI & RAG: Groq LLM + FAISS embeddings
-Storage: Google Sheets (TicketDatabase, Sheet2)
-Analytics: Plotly (integrated in Streamlit UI)
-
-Data Flow Diagram (Conceptual)
+```
 Ticket Submission → FAISS KB Context → LLM Resolution  
       |                                   |
       v                                   v  
@@ -128,8 +125,13 @@ Categorize Ticket → Assign Agent → Save to Google Sheets
       |  
       v  
 Dashboard Metrics & Charts  
+```
 
-📁 5. Folder & File Structure
+---
+
+## 📁 5. Folder & File Structure
+
+```
 project/
 ├─ data/
 │   ├─ customer_support_tickets.csv     # Raw ticket dataset
@@ -152,37 +154,46 @@ project/
 ├─ rag.py                               # AI (RAG + LLM) logic and agent assignment
 ├─ new.py                               # Utility or test module
 └─ README.md                            # Project documentation (this file)
+```
 
-🧾 6. Key Data Points
-Field	Description
-ticket_id	Unique ticket identifier
-customer_name, customer_email	Customer details
-product_purchased, date_of_purchase	Purchase metadata
-ticket_subject, ticket_description	Issue details
-ticket_status, ticket_priority	Classification fields
-ticket_channel	Source (Web, Email, Phone, etc.)
-assigned_agent	Agent assigned dynamically
-first_response_time, resolution_time	SLA metrics
-customer_satisfaction_rating	Feedback rating (1–5)
-👥 Agents
+---
 
-Sales
+## 🧾 6. Key Data Points
 
-Marketing
+| Field                                    | Description                      |
+| ---------------------------------------- | -------------------------------- |
+| `ticket_id`                              | Unique ticket identifier         |
+| `customer_name`, `customer_email`        | Customer details                 |
+| `product_purchased`, `date_of_purchase`  | Purchase metadata                |
+| `ticket_subject`, `ticket_description`   | Issue details                    |
+| `ticket_status`, `ticket_priority`       | Classification fields            |
+| `ticket_channel`                         | Source (Web, Email, Phone, etc.) |
+| `assigned_agent`                         | Agent assigned dynamically       |
+| `first_response_time`, `resolution_time` | SLA metrics                      |
+| `customer_satisfaction_rating`           | Feedback rating (1–5)            |
 
-Engineering
+---
 
-General Support
+## 👥 Agents
 
-⚙️ Ticket Classification
+* Sales
+* Marketing
+* Engineering
+* General Support
 
-Priority: Low / Medium / High / Critical
+---
 
-Status: Open / Closed
+## ⚙️ Ticket Classification
 
-Channel: Web / Email / Phone / Other
+* **Priority:** Low / Medium / High / Critical
+* **Status:** Open / Closed
+* **Channel:** Web / Email / Phone / Other
 
-📦 7. Installation & Setup
+---
+
+## 📦 7. Installation & Setup
+
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/smart-support-system.git
 cd smart-support-system
@@ -192,21 +203,34 @@ pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run dashboard.py
+```
 
-🤖 8. Tech Stack
-Component	Technology
-Frontend	Streamlit
-Backend	Python
-Database	Google Sheets
-AI Model	Groq LLM + Sentence Transformers (MiniLM-L6-v2)
-Vector Store	FAISS
-Visualization	Plotly
-Storage	Google Sheets (TicketDatabase Sheet2)
-🧠 9. Agile Documentation
+---
 
-See docs/agile_documentation.md
+## 🤖 8. Tech Stack
 
+| Component     | Technology                                      |
+| ------------- | ----------------------------------------------- |
+| Frontend      | Streamlit                                       |
+| Backend       | Python                                          |
+| Database      | Google Sheets                                   |
+| AI Model      | Groq LLM + Sentence Transformers (MiniLM-L6-v2) |
+| Vector Store  | FAISS                                           |
+| Visualization | Plotly                                          |
+| Storage       | Google Sheets (TicketDatabase Sheet2)           |
 
-🪪 License
+---
 
-This project is licensed under the terms of the MIT License
+## 🧠 9. Agile Documentation
+
+See [docs/agile_documentation.md](./docs/agile_documentation.md).
+
+---
+
+## 🪪 License
+
+This project is licensed under the terms of the [MIT License](./LICENSE).
+
+---
+
+Would you like me to include **badges and visuals** (e.g., build status, Python version, or architecture diagram image placeholders) to make the README more GitHub-ready?
